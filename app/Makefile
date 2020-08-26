@@ -172,4 +172,4 @@ delete:
 	python -m ledgerblue.deleteApp $(COMMON_DELETE_PARAMS)
 
 listvariants:
-	@echo VARIANTS COIN cosmos
+	@echo VARIANTS COIN IOV
