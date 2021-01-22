@@ -84,7 +84,7 @@ cmake-build-fuzz/
 !\deps/tinycbor
 !\deps/BLAKE
 
-app/src/glyphs.c
+app/glyphs/glyphs.c
 
-app/src/glyphs.h
+app/glyphs/glyphs.h
 /build
