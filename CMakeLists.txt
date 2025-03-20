@@ -91,3 +91,6 @@ target_include_directories(fuzzing_stub PUBLIC
         deps/jsmn/src
         )
 target_link_libraries(fuzzing_stub app_lib)
+
+
+Minor update to documentation.
