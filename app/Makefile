@@ -28,7 +28,7 @@ include $(BOLOS_SDK)/Makefile.defines
 APPNAME = "IOV"
 APPVERSION_M=2
 APPVERSION_N=16
-APPVERSION_P=5
+APPVERSION_P=6
 
 APPPATH = "44'/234'"
 
@@ -58,7 +58,7 @@ all: default
 	@echo "LOAD_PARAMS=\"${COMMON_LOAD_PARAMS}\"" >> $(CURDIR)/pkg/zxtool.sh
 	@echo "DELETE_PARAMS=\"${COMMON_DELETE_PARAMS}\"" >> $(CURDIR)/pkg/zxtool.sh
 	@echo "APPHEX=\"" >> $(CURDIR)/pkg/zxtool.sh
-	@cat $(CURDIR)/bin/app.hex >> $(CURDIR)/pkg/zxtool.sh
+	@cat $(BIN_DIR)/app.hex >> $(CURDIR)/pkg/zxtool.sh
 	@echo "\"" >> $(CURDIR)/pkg/zxtool.sh
 	@cat $(CURDIR)/../deps/ledger-zxlib/scripts/template.sh >> $(CURDIR)/pkg/zxtool.sh
 	@chmod +x $(CURDIR)/pkg/zxtool.sh
